@@ -4,7 +4,7 @@ This capstone challenges you to build a predictive Bitcoin DCA (Dollar Cost Aver
 
 ---
 
-## 🏛️ Project (Trilemma Foundation): Improving Institutional Bitcoin Accumulation Strategies
+## Project (Trilemma Foundation): Improving Institutional Bitcoin Accumulation Strategies
 
 *   **Problem:** Institutions are accumulating Bitcoin; standard DCA may be suboptimal under competitive, high-volume conditions.
 *   **Goal:** Design **data-driven, long-only** accumulation strategies that keep DCA’s systematic discipline but **improve acquisition efficiency** within a fixed **budget + time horizon** (esp. institutional scale, e.g., $1M+/month).
@@ -17,7 +17,7 @@ This capstone challenges you to build a predictive Bitcoin DCA (Dollar Cost Aver
 
 
 ---
-## 🎯 The Capstone Objective
+## The Capstone Objective
 
 The goal of this project is to evolve a basic MVRV-based DCA model into a sophisticated, market-aware strategy.
 
@@ -31,7 +31,7 @@ The goal of this project is to evolve a basic MVRV-based DCA model into a sophis
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Repository Setup
 1. **Fork this repository** to your own GitHub account.
@@ -60,7 +60,7 @@ python data/download_data.py
 
 ---
 
-## 🏗️ The Foundation (Baseline Model)
+## The Foundation (Baseline Model)
 
 The repository provides a working **Foundation Model** located in `template/`. This model uses:
 - **MVRV Z-score**: Buy more when undervalued (Deep Value Zone).
@@ -75,7 +75,7 @@ python -m template.backtest_template
 
 ---
 
-## 🛠️ The Challenge (Polymarket Integration)
+## The Challenge (Polymarket Integration)
 
 Your task is to modify `template/model_development_template.py` to integrate Polymarket signals. 
 
@@ -106,7 +106,7 @@ Your task is to modify `template/model_development_template.py` to integrate Pol
 
 ---
 
-## 💡 Example Implementation: `example_1`
+## Example Implementation: `example_1`
 
 To help you get started, we've provided `example_1/`. This is a complete "fork" of the `template/` directory that demonstrates:
 1. **Data Loading**: How to use `prelude_example_1.py` to ingest Polymarket parquet files.
@@ -117,7 +117,7 @@ To help you get started, we've provided `example_1/`. This is a complete "fork" 
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 Your integrated model will be evaluated on the following (automated via `backtest_template.py`):
 - **Win Rate**: Must outperform uniform DCA in >50% of 1-year windows.
@@ -126,7 +126,7 @@ Your integrated model will be evaluated on the following (automated via `backtes
 
 ---
 
-## 📚 Documentation
+## Documentation
 - **Model Logic**: See `docs/model.md` for the current MVRV implementation.
 - **Backtest Framework**: See `docs/model_backtest.md` for scoring methodology.
 - **Polymarket Schema**: See `data/Polymarket/polymarket_btc_analytics_schema.md`.
